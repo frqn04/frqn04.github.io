@@ -1,0 +1,28 @@
+/* archivo principal que importa todos los archivos CSS separados */
+
+/* estilos base */
+@import url('reset.css');
+
+/*layout y estructura */
+@import url('layout.css');
+
+/* componentes reutilizables */
+@import url('components.css');
+
+/* estilos de pestañas del portafolio */
+@import url('portfolio-tabs.css');
+
+/* estilos específicos de secciones */
+@import url('sections.css');
+
+/* estilos de iconos de contacto */
+@import url('contact-icons.css');
+
+/* estilos modernos del formulario de contacto */
+@import url('contact-form.css');
+
+/* tema galáctico violeta y negro */
+@import url('galactic-theme.css');
+
+/* el responsive */
+@import url('responsive.css');
