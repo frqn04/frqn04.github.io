@@ -129,6 +129,7 @@ section {
 .portfolio {
     background-color: var(--color-secondary);
     position: relative;
+    border-bottom: 1px solid var(--color-primary-dark);
 }
 
 /* Separador entre Portfolio y Contacto - Eliminado para evitar duplicidad */
@@ -200,9 +201,9 @@ section {
 /* Contact */
 .contact {
     background-color: var(--color-secondary-light);
-    margin-top: 3rem;
     position: relative;
     box-shadow: 0 0 10px rgba(123, 104, 238, 0.5);
+    /* Eliminamos el borde superior para evitar la doble línea */
 }
 
 .contact-container {
