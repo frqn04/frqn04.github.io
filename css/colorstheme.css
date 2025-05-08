@@ -1,26 +1,26 @@
-/* Tema Galáctico - Violeta y Negro */
+
 
 /* Colores principales */
 :root {
-    --color-primary: #7B68EE; /* Violeta más suave */
-    --color-primary-dark: #5D4EA6; /* Violeta oscuro suavizado */
-    --color-primary-light: #9D8CE7; /* Violeta claro suavizado */
-    --color-secondary: #111111; /* Negro profundo */
-    --color-secondary-light: #222222; /* Negro más claro */
-    --color-accent: #DA70D6; /* Orquídea para acentos - más suave que magenta */
-    --color-text-light: #F0F0FF; /* Texto claro con tono ligeramente violáceo */
-    --color-text-dark: #D8D8F0; /* Texto ligeramente oscurecido con tono violáceo */
-    --color-text-accent: #E6CAFF; /* Texto con tono lavanda claro para acentos */
-    --color-text-highlight: #FFD9FF; /* Texto con tono rosado claro para destacados */
-    --color-background: #000000; /* Fondo negro */
-    --color-card-bg: #1A1A1A; /* Fondo de tarjetas */
-    --gradient-primary: linear-gradient(135deg, rgba(123, 104, 238, 0.85), rgba(93, 78, 166, 0.9)); /* Degradado más suave */
+    --color-primary: #7B68EE; 
+    --color-primary-dark: #5D4EA6; 
+    --color-primary-light: #9D8CE7; 
+    --color-secondary: #111111; 
+    --color-secondary-light: #222222; 
+    --color-accent: #DA70D6; 
+    --color-text-light: #F0F0FF; 
+    --color-text-dark: #D8D8F0; 
+    --color-text-accent: #E6CAFF; 
+    --color-text-highlight: #FFD9FF; 
+    --color-background: #000000; 
+    --color-card-bg: #1A1A1A; 
+    --gradient-primary: linear-gradient(135deg, rgba(123, 104, 238, 0.85), rgba(93, 78, 166, 0.9)); 
     --gradient-cosmic: linear-gradient(to right, #000000, #1A1A1A, #000000);
     --shadow-primary: 0 5px 15px rgba(123, 104, 238, 0.25);
     --shadow-cosmic: 0 8px 25px rgba(157, 140, 231, 0.15);
 }
 
-/* Estilos base */
+
 body {
     background-color: var(--color-background);
     background-image: radial-gradient(circle at 50% 50%, #1A1A1A 0%, #000000 100%);
@@ -34,14 +34,14 @@ h1 {
 }
 
 h2, h3 {
-    color: var(--color-primary-light); /* Cambiado a un tono violeta más vibrante */
+    color: var(--color-primary-light); 
     text-shadow: 0 0 8px rgba(123, 104, 238, 0.4);
     position: relative;
 }
 
 h2::after, h3::after {
-    content: none; /* Eliminamos la línea decorativa */
-    display: none; /* Ocultamos completamente el pseudo-elemento */
+    content: none; 
+    display: none; 
 }
 
 h4, h5, h6 {
@@ -56,9 +56,9 @@ a:hover {
     color: var(--color-accent);
 }
 
-/* Header */
+
 header {
-    background: linear-gradient(to right, rgba(123, 104, 238, 0.8), rgba(93, 78, 166, 0.85)); /* Degradado más suave para navbar */
+    background: linear-gradient(to right, rgba(123, 104, 238, 0.8), rgba(93, 78, 166, 0.85)); 
     box-shadow: 0 2px 10px rgba(123, 104, 238, 0.25);
 }
 
@@ -72,13 +72,13 @@ header nav ul li a.active {
     border-bottom: 2px solid var(--color-text-light);
 }
 
-/* Secciones */
+
 section {
     background-color: var(--color-secondary);
     border-bottom: 1px solid var(--color-primary-dark);
 }
 
-/* Hero Section */
+
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/backgroundgod.gif');
     position: relative;
@@ -100,14 +100,14 @@ section {
     z-index: 1;
 }
 
-/* About Me */
+
 .about-me {
     background-color: var(--color-secondary-light);
 }
 
 .about-container {
-    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.9), rgba(10, 10, 10, 0.95)); /* Fondo más sutil */
-    border: 1px solid rgba(93, 78, 166, 0.4); /* Borde más sutil */
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.9), rgba(10, 10, 10, 0.95)); 
+    border: 1px solid rgba(93, 78, 166, 0.4); 
     box-shadow: var(--shadow-cosmic);
     padding: 2.5rem;
     border-radius: 10px;
@@ -125,19 +125,19 @@ section {
     box-shadow: 0 0 15px rgba(123, 104, 238, 0.2);
 }
 
-/* Portfolio */
+
 .portfolio {
     background-color: var(--color-secondary);
     position: relative;
     border-bottom: 1px solid var(--color-primary-dark);
 }
 
-/* Separador entre Portfolio y Contacto - Eliminado para evitar duplicidad */
+
 .portfolio::after {
-    content: none; /* Eliminamos este separador ya que tenemos uno en .contact::before */
+    content: none; 
 }
 
-/* Tabs */
+
 .tab-button {
     color: var(--color-text-dark);
 }
@@ -154,7 +154,7 @@ section {
     background-color: var(--color-primary);
 }
 
-/* Project Cards */
+
 .project-card {
     background-color: var(--color-card-bg);
     border: 1px solid var(--color-primary-dark);
@@ -175,7 +175,7 @@ section {
     text-shadow: 0 0 3px rgba(123, 104, 238, 0.15);
 }
 
-/* Tech Stack */
+
 .tech-item {
     background-color: var(--color-card-bg);
     border: 1px solid var(--color-primary-dark);
@@ -198,12 +198,10 @@ section {
     text-shadow: 0 0 2px rgba(123, 104, 238, 0.1);
 }
 
-/* Contact */
 .contact {
     background-color: var(--color-secondary-light);
     position: relative;
     box-shadow: 0 0 10px rgba(123, 104, 238, 0.5);
-    /* Eliminamos el borde superior para evitar la doble línea */
 }
 
 .contact-container {
@@ -217,11 +215,11 @@ section {
 }
 
 .contact-form h3:after {
-    content: none; /* Eliminamos la línea decorativa */
-    display: none; /* Ocultamos completamente el pseudo-elemento */
+    content: none; 
+    display: none; 
 }
 
-/* Form elements */
+
 .form-group label {
     color: var(--color-text-accent);
 }

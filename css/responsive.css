@@ -1,4 +1,4 @@
-/* Estilos responsivos para diferentes tamaños de pantalla */
+
 
 /* Tablets y dispositivos medianos */
 @media (max-width: 768px) and (min-width: 577px) {
@@ -56,7 +56,7 @@
 }
 /* Estilos para pantallas grandes */
 
-/* Pantallas medianas-grandes (1366px y superiores) */
+
 @media (min-width: 1366px) {
     .container {
         max-width: 1300px;
@@ -87,7 +87,7 @@
         line-height: 1.7;
     }
     
-    /* Sección Hero */
+    
     .hero {
         min-height: 500px;
     }
@@ -105,7 +105,7 @@
         font-size: 1.8rem;
     }
     
-    /* Sección About */
+   
     .about-container {
         padding: 3.5rem;
         gap: 3rem;
@@ -120,7 +120,7 @@
         height: 320px;
     }
     
-    /* Sección Portfolio */
+   
     .tabs-nav {
         margin-bottom: 2.5rem;
     }
@@ -257,7 +257,7 @@
         line-height: 1.8;
     }
     
-    /* Sección Hero */
+    
     .hero {
         min-height: 600px;
     }
@@ -275,7 +275,7 @@
         font-size: 2.2rem;
     }
     
-    /* Sección About */
+  
     .about-container {
         padding: 5rem;
         display: flex;
@@ -295,7 +295,7 @@
         flex: 1;
     }
     
-    /* Sección Portfolio */
+    
     .tabs-nav {
         margin-bottom: 3rem;
     }

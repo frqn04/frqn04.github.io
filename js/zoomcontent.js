@@ -27,14 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = ''; 
     }
 
-    // Verificar si estamos en una página de proyecto
+    // verificar si estamos en la pagina de proyecto
     const currentPath = window.location.pathname;
     const isProjectPage = !currentPath.endsWith('index.html') && 
                          !currentPath.endsWith('/') && 
                          !currentPath.endsWith('\\') &&
                          currentPath.includes('project');
     
-    // Aplicar zoom solo si estamos en una página de proyecto
+    
     if (isProjectPage) {
         
         const projectImages = document.querySelectorAll('.screenshot-grid img');
@@ -45,17 +45,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Cerrar zoomcontent al hacer clic en el botón de cierre
+    
     closeBtn.addEventListener('click', closeZoomcontent);
 
-    // Cerrar zoomcontent al hacer clic fuera de la imagen
+    
     zoomcontent.addEventListener('click', function(e) {
         if (e.target === zoomcontent) {
             closeZoomcontent();
         }
     });
 
-    // Cerrar zoomcontent al presionar la tecla Escape
+    
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && zoomcontent.classList.contains('active')) {
             closeZoomcontent();

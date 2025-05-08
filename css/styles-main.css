@@ -21,8 +21,8 @@
 /* estilos modernos del formulario de contacto */
 @import url('contact-form.css');
 
-/* tema galáctico violeta y negro */
-@import url('galactic-theme.css');
+/* paleta colores principal*/
+@import url('colorstheme.css');
 
 
 /* el responsive */
